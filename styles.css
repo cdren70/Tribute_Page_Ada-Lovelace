@@ -1,0 +1,156 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif; /* Or choose another suitable font */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #2e1f47; /* Example color, adjust as needed */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+/* Hero Section */
+.hero {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.hero-image {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px; /* Optional: Add a subtle border-radius */
+}
+
+.image-caption{
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+/* Bio Sections */
+.bio {
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bio h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2e1f47;
+}
+
+.bio p {
+    margin-bottom: 1rem;
+}
+
+.bio img{
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+/* Quotes Section */
+.quotes {
+    background-color: #f8f8f8; /* Tetap gunakan background yang netral */
+    padding: 3rem 2rem; /* Padding atas bawah lebih besar */
+    margin-bottom: 2rem;
+}
+
+.quotes h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem; /* Jarak lebih besar antara judul dan kutipan */
+    text-align: center;
+    color: #2e1f47; /* Warna ungu gelap untuk judul */
+    font-family: 'Georgia', serif; /* Ganti font untuk kesan formal */
+}
+
+.quotes blockquote {
+    font-size: 1.3rem; /* Ukuran font sedikit lebih besar */
+    font-style: italic;
+    border-left: none; /* Hilangkan border kiri */
+    padding-left: 0; /* Hilangkan padding kiri */
+    margin-bottom: 2.5rem; /* Jarak antar kutipan lebih besar */
+    position: relative; /* Untuk positioning pseudo-element */
+    color: #2e1f47;
+}
+
+/* Menambahkan double quotes besar di awal kutipan */
+.quotes blockquote::before {
+    content: '\201C'; /* Kode untuk double quote kiri */
+    font-family: 'Georgia', serif;
+    font-size: 4rem;
+    color: #6c568e; /* Warna ungu lebih soft */
+    position: absolute;
+    left: -2rem; /* Posisikan di kiri kutipan */
+    top: -1rem;
+}
+
+.quotes blockquote footer {
+    text-align: right;
+    font-size: 1.1rem;
+    font-style: normal;
+    color: #6c568e;
+    font-family: 'Georgia', serif;
+    margin-top: 0.5rem;
+    background-color: transparent; /* Hapus background color pada footer */
+    padding-right: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsive Design (Adjust as needed) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .bio h2 {
+        font-size: 1.8rem;
+    }
+
+    .quotes h2 {
+        font-size: 1.6rem;
+    }
+    .bio img{
+        max-width: 100%;
+    }
+}
